@@ -3,9 +3,9 @@
     public class CheesePizza : Pizza
     {
         public CheesePizza()
-            :base("Traditional Cheese", "Soft", "Whatever")
+            :base("Traditional Cheese", "original thin dough", "secrete source")
         {
-            base.AddTopping("Extra Cheese");
+            base.AddToppings(new[] { "Cheese", "Garlic", "Pizzastore Secrete" });
         }
     }
 }

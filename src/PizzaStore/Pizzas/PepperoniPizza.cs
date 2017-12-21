@@ -5,9 +5,9 @@ namespace PizzaStore.Pizzas
     public class PepperoniPizza : Pizza
     {
         public PepperoniPizza()
-            :base("Traditional Pepperoni", "Soft", "Whatever")
+            :base("Traditional Pepperoni", "original thin dough", "secrete source")
         {
-            base.AddTopping("pepper");
+            base.AddToppings(new []{"Cheese", "Garlic", "Pizzastore Secrete"});
         }
     }
 }
