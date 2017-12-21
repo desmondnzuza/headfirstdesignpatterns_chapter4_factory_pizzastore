@@ -4,29 +4,15 @@ namespace PizzaStore.Pizzas.Chicago
 {
     public class ChicagoStyleCheesePizza : Pizza
     {
-        public override string GetDescription()
+        public ChicagoStyleCheesePizza()
+            :base("Chicago Style Cheese", "Extra Think Crust Dough", "Plum Tomato Source")
         {
-            return "Chicago Cheeze Pizza";
-        }
-
-        public override void Bake()
-        {
-            Console.WriteLine("Preparing\t: Chicago Cheeze Pizza");
-        }
-
-        public override void Box()
-        {
-            Console.WriteLine("Boxing\t\t: Chicago Cheeze Pizza");
+            base.AddTopping("Shredded Mozzarella Cheese");
         }
 
         public override void Cut()
         {
-            Console.WriteLine("Cutting Up\t: Chicago Cheeze Pizza");
-        }
-
-        public override void Prepare()
-        {
-            Console.WriteLine("Preparing\t: Chicago Cheeze Pizza");
+            Console.WriteLine("Cutting the pizza into square slices");
         }
     }
 }

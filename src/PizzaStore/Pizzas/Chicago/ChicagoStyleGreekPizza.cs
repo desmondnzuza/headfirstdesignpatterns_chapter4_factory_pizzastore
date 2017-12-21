@@ -1,32 +1,11 @@
-﻿using System;
-
-namespace PizzaStore.Pizzas.Chicago
+﻿namespace PizzaStore.Pizzas.Chicago
 {
     public class ChicagoStyleGreekPizza : Pizza
     {
-        public override string GetDescription()
+        public ChicagoStyleGreekPizza()
+            :base("Chicago Style Greek", "Extra Think Crust Dough", "Normal Source")
         {
-            return "Chicago Greek Pizza";
-        }
-
-        public override void Bake()
-        {
-            Console.WriteLine("Preparing\t: Chicago Greek Pizza");
-        }
-
-        public override void Box()
-        {
-            Console.WriteLine("Boxing\t\t: Chicago Greek Pizza");
-        }
-
-        public override void Cut()
-        {
-            Console.WriteLine("Cutting Up\t: Chicago Greek Pizza");
-        }
-
-        public override void Prepare()
-        {
-            Console.WriteLine("Preparing\t: Chicago Greek Pizza");
+            AddToppings(new []{ "Shredded Mozzarella Cheese" , "Extra Cheese" });
         }
     }
 }
