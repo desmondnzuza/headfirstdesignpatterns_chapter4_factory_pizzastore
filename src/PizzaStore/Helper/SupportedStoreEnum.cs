@@ -4,6 +4,7 @@
     {
         UnKnown,
         NewYork,
-        Chicago
+        Chicago,
+        Traditional
     }
 }

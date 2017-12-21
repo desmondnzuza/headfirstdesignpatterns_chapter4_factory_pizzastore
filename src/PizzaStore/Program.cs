@@ -50,6 +50,8 @@ namespace PizzaStore
                     return new NewYorkPizzaStore();
                 case SupportedStoreEnum.Chicago:
                     return new ChicagoPizzaStroe();
+                case SupportedStoreEnum.Traditional:
+                    return new TraditionalStore();
                 default:
                     throw new NotSupportedException();
             }
@@ -75,7 +77,7 @@ namespace PizzaStore
 
         private static SupportedStoreEnum GetAnswerForStore()
         {
-            Console.WriteLine("What store do you want to order from? 1)NewYork 2)Chicago");
+            Console.WriteLine("Which store do you want to order from? 1)NewYork 2)Chicago 3)Original");
             var rawAnswer = Console.ReadLine();
 
             switch (rawAnswer)
@@ -84,6 +86,8 @@ namespace PizzaStore
                     return SupportedStoreEnum.NewYork;
                 case "2":
                     return SupportedStoreEnum.Chicago;
+                case "3":
+                    return SupportedStoreEnum.Traditional;
                 default:
                     return SupportedStoreEnum.UnKnown;
             }
