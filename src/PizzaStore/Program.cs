@@ -49,7 +49,7 @@ namespace PizzaStore
                 case SupportedStoreEnum.NewYork:
                     return new NewYorkPizzaStore();
                 case SupportedStoreEnum.Chicago:
-                    return new ChicagoPizzaStroe();
+                    return new ChicagoPizzaStore();
                 case SupportedStoreEnum.Traditional:
                     return new TraditionalStore();
                 default:

@@ -4,7 +4,7 @@ using PizzaStore.Pizzas.Chicago;
 
 namespace PizzaStore.Store
 {
-    public class ChicagoPizzaStroe : PizzaStore
+    public class ChicagoPizzaStore : PizzaStore
     {
         protected override Pizza CreatePizza(string type)
         {
